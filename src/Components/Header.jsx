@@ -14,14 +14,21 @@ import { CryptoState } from "../CryptoContext";
 import AuthModal from "./Authentication/AuthModal";
 import UserSideBar from "./Authentication/UserSideBar";
 
-const Title = styled(Typography)({
+const Title = styled(Typography)(({theme})=>({
   flex: 1,
   color: "gold",
   cursor: "pointer",
   fontFamily: "Montserrat",
   fontWeight: "bold",
-  fontSize: '30px'
-});
+  fontSize: '30px',
+
+  [theme.breakpoints.down("sm")]: {
+    fontSize: '13px',
+    flex: 1,
+    marginRight: '20px'
+  },
+}));
+
 
 const darkTheme = createTheme({
   palette: {

@@ -42,6 +42,8 @@ const TableBodyRow = styled(TableRow)({
   },
 });
 
+
+
 export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -211,6 +213,8 @@ function CoinTable() {
             display: "flex",
             justifyContent: "center",
             width: "100%",
+
+            
           }}
           onChange={(_, value) => {
             setPage(value);

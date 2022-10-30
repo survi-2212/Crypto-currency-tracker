@@ -74,7 +74,6 @@ export default function AuthModal() {
         style={{
           width: 85,
           height: 40,
-          marginLeft: 15,
           backgroundColor: "#EEBC1D",
         }}
       >

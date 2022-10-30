@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import { styled, Box } from '@mui/material'
 import Header from './Components/Header';
 import Home from './Pages/Home';
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Container>
           <Header />
           <Routes>
@@ -26,7 +26,7 @@ function App() {
           </Routes>
         </Container>
         <Alert/>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
